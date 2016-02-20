@@ -1,3 +1,5 @@
+@import url('http://fonts.googleapis.com/css?family=Lato');
+
 $primaryColour: #268770;
 $primaryFontColour: #666;
 
@@ -6,7 +8,7 @@ $sectionBackground: url("img/grey.png");
 $mapBackground: url("img/vancouver.png");
 
 body {
-	font-family: "Lato", "Roboto", "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-family: "Lato", Helvetica, Arial, sans-serif;
 	background-image: $background;
 	background-color: $primaryFontColour;
 	color: $primaryFontColour;
@@ -106,28 +108,35 @@ nav {
 	}
 }
 
-.resume-section,
-.project .title {
-	border-bottom: 1px dotted #A3A3A3;
-	padding-bottom: 3px;
-	display: block;
-}
+.resume-item {
+	.resume-title {
+		border-bottom: 1px dotted #A3A3A3;
+		padding-bottom: 3px;
+		display: block;
+	}
 
-.job {
-	margin-top: 20px;
+	.job {
+		margin-top: 20px;
+	}
 }
 
 .project {
 	clear: both;
 	overflow: auto;
-	padding: 10px 5px;
+	padding: 10px 5px 10px 10px;
+
+	.title {
+		border-bottom: 1px dotted #A3A3A3;
+		padding-bottom: 3px;
+		display: block;
+	}
 
 	.preview {
 		float: left;
 	}
 
 	.desc {
-		margin-left: 300px;
+		margin-left: 310px;
 	}
 
 	.thumbnail {
@@ -144,6 +153,10 @@ nav {
 	margin-left: 20px;
 	border: 3px solid #fff;
 	box-shadow: 0 0 0 2px #666;
+}
+
+.date {
+	float: right;
 }
 
 .button {
@@ -208,36 +221,39 @@ nav {
 	border: none;
 }
 
-@media (min-width: 800px) {
-	width: 65em;
-}	
-
-@media (max-width: 600px) {
-	.preview {
-		float: none;
-		text-align: center;
+/** Smartphones */
+@media only screen 
+and (min-device-width : 320px) 
+and (max-device-width : 480px) {
+	nav .anchors {
+		display: none;
 	}
 
+	.main-section {
+		border-left: none;
+		border-right: none;
 
-	.about-me-thumbnail {
-		margin-left: 0;
+		.content {
+			padding: 1.25em;
+		}
 	}
 
 	.project {
+		padding: 0.5em;
+
 		.desc {
 			margin-left: 0;
 			display: inline-block;
 		}
-	
-		.title {
-			float: center;
-			display: block;
-			margin: 0 auto;
-			text-align: center;
+
+		.thumbnail {
+			width: 250px;
+			height: 150px;
 		}
 
-		.preview {
+		.preview, .date, .title {
 			float: none;
+			display: block;
 			text-align: center;
 		}
 	}
@@ -246,25 +262,48 @@ nav {
 		padding-top: 20px;
 	}
 
-	.date, .title {
-		display: block;
-		float: none;
+
+	#about {
+		.preview {
+			display: block;
+			float: none;
+			text-align: center;
+		}
+		.about-me-thumbnail {
+			margin-left: 0;
+			float: none;
+		}
+	}
+
+	.resume-item {
+		.title:not(:first-child) {
+			padding-top: 20px;
+		}
+
+		.date, .title {
+			float: none;
+			display: block;
+		}
 	}
 
 	.list-no-style {
 		padding: 0;
-	}	
+	}
+}
 
-	.main-section {
-		border-left: none;
-		border-right: none;
-
-		.content {
-			padding: 1em;
-		}
+/** iPads */
+@media only screen 
+and (min-device-width : 768px) 
+and (max-device-width : 1024px) 
+and (orientation : portrait) {
+	#container {
+		width: 95%;
 	}
 
-	nav .anchors {
-		display: none;
+	.project {
+		.date {
+			display: block;
+			float: none;
+		}
 	}
 }	

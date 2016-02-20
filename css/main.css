@@ -1,11 +1,15 @@
+@import url("http://fonts.googleapis.com/css?family=Lato");
+/* line 10, sass/main.scss */
 body {
-  font-family: "Lato", "Roboto", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "Lato", Helvetica, Arial, sans-serif;
   background-image: url("img/dark-bg.jpg");
   background-color: #666;
   color: #666;
   margin: 0;
-  line-height: 150%; }
+  line-height: 150%;
+}
 
+/* line 19, sass/main.scss */
 header {
   width: 100%;
   height: 50px;
@@ -14,18 +18,26 @@ header {
   bottom: auto;
   z-index: 1000;
   border-bottom: 1px solid #4C4C4C;
-  background-color: #303030; }
+  background-color: #303030;
+}
 
+/* line 30, sass/main.scss */
 a, .link {
   color: #268770;
   border-bottom: 1px dotted #268770;
   text-decoration: none;
-  cursor: pointer; }
+  cursor: pointer;
+}
 
+/* line 38, sass/main.scss */
 nav li {
-  display: inline; }
+  display: inline;
+}
+/* line 42, sass/main.scss */
 nav ul {
-  margin: 0; }
+  margin: 0;
+}
+/* line 46, sass/main.scss */
 nav a {
   color: #ddd;
   font-size: 14px;
@@ -33,75 +45,120 @@ nav a {
   text-transform: lowercase;
   margin: 12px 12px 0px 12px;
   border-bottom: 1px dashed #268770;
-  display: inline-block; }
+  display: inline-block;
+}
+/* line 56, sass/main.scss */
 nav .anchors {
-  margin-right: 40px; }
-  nav .anchors a:hover {
-    color: #268770; }
+  margin-right: 40px;
+}
+/* line 59, sass/main.scss */
+nav .anchors a:hover {
+  color: #268770;
+}
+/* line 64, sass/main.scss */
 nav .logo .round {
-  color: #268770; }
+  color: #268770;
+}
+/* line 68, sass/main.scss */
 nav .logo .icon {
-  color: #fff; }
+  color: #fff;
+}
+/* line 72, sass/main.scss */
 nav .header-title {
   text-transform: uppercase;
-  border: none; }
+  border: none;
+}
 
+/* line 78, sass/main.scss */
 #container {
   max-width: 65em;
   margin: 5em auto;
-  margin-bottom: 3em; }
+  margin-bottom: 3em;
+}
 
+/* line 84, sass/main.scss */
 #wordcloud {
   width: 100%;
   height: 250px;
   opacity: 0.7;
-  margin: 0 auto; }
+  margin: 0 auto;
+}
 
+/* line 91, sass/main.scss */
 .main-section {
   background-color: #EDEDED;
   background-image: url("img/grey.png");
   border: 5px solid #262626;
   box-shadow: 5px 5px 10px #262626;
-  margin-bottom: 1em; }
-  .main-section .section-header {
-    padding: 1em;
-    font-size: 1.25em;
-    text-transform: lowercase;
-    background-color: #268770;
-    color: #ddd; }
-  .main-section .content {
-    padding: 2em; }
+  margin-bottom: 1em;
+}
+/* line 98, sass/main.scss */
+.main-section .section-header {
+  padding: 1em;
+  font-size: 1.25em;
+  text-transform: lowercase;
+  background-color: #268770;
+  color: #ddd;
+}
+/* line 106, sass/main.scss */
+.main-section .content {
+  padding: 2em;
+}
 
-.resume-section,
-.project .title {
+/* line 112, sass/main.scss */
+.resume-item .resume-title {
   border-bottom: 1px dotted #A3A3A3;
   padding-bottom: 3px;
-  display: block; }
+  display: block;
+}
+/* line 118, sass/main.scss */
+.resume-item .job {
+  margin-top: 20px;
+}
 
-.job {
-  margin-top: 20px; }
-
+/* line 123, sass/main.scss */
 .project {
   clear: both;
   overflow: auto;
-  padding: 10px 5px; }
-  .project .preview {
-    float: left; }
-  .project .desc {
-    margin-left: 300px; }
-  .project .thumbnail {
-    width: 275px;
-    height: 200px;
-    border: 3px solid #fff;
-    box-shadow: 0 0 0 2px #666; }
+  padding: 10px 5px 10px 10px;
+}
+/* line 128, sass/main.scss */
+.project .title {
+  border-bottom: 1px dotted #A3A3A3;
+  padding-bottom: 3px;
+  display: block;
+}
+/* line 134, sass/main.scss */
+.project .preview {
+  float: left;
+}
+/* line 138, sass/main.scss */
+.project .desc {
+  margin-left: 310px;
+}
+/* line 142, sass/main.scss */
+.project .thumbnail {
+  width: 275px;
+  height: 200px;
+  border: 3px solid #fff;
+  box-shadow: 0 0 0 2px #666;
+}
 
+/* line 150, sass/main.scss */
 .about-me-thumbnail {
   width: 175px;
   height: 175px;
   margin-left: 20px;
   border: 3px solid #fff;
-  box-shadow: 0 0 0 2px #666; }
+  box-shadow: 0 0 0 2px #666;
+}
 
+/* line 158, sass/main.scss */
+.date {
+  float: right;
+}
+
+/* line 162, sass/main.scss */
 .button {
   background-color: #666;
   border: 2px solid #fff;
@@ -111,84 +168,148 @@ nav .header-title {
   height: 50px;
   text-transform: uppercase;
   letter-spacing: 2px;
-  margin: 5px; }
-  .button a {
-    color: #fff;
-    border: none; }
+  margin: 5px;
+}
+/* line 173, sass/main.scss */
+.button a {
+  color: #fff;
+  border: none;
+}
 
+/* line 179, sass/main.scss */
 .map {
   background-image: url("img/vancouver.png");
-  height: 30em; }
+  height: 30em;
+}
 
+/* line 184, sass/main.scss */
 .fa {
-  padding-right: 5px; }
+  padding-right: 5px;
+}
 
+/* line 188, sass/main.scss */
 .hide {
-  display: none; }
+  display: none;
+}
 
+/* line 192, sass/main.scss */
 .center {
-  text-align: center; }
+  text-align: center;
+}
 
+/* line 196, sass/main.scss */
 .circle {
-  border-radius: 50%; }
+  border-radius: 50%;
+}
 
+/* line 200, sass/main.scss */
 .clearfix {
-  overflow: auto; }
+  overflow: auto;
+}
 
+/* line 205, sass/main.scss */
 .list-no-style > li {
-  list-style-type: none; }
+  list-style-type: none;
+}
 
+/* line 209, sass/main.scss */
 .inline-list > li {
   float: left;
   list-style-position: inside;
   list-style-type: disc;
-  margin-right: 1em; }
+  margin-right: 1em;
+}
 
+/* line 216, sass/main.scss */
 .subtext {
-  font-style: italic; }
+  font-style: italic;
+}
 
+/* line 220, sass/main.scss */
 .no-style {
-  border: none; }
+  border: none;
+}
 
-@media (min-width: 800px) {
-  width: 65em; }
-@media (max-width: 600px) {
-  .preview {
-    float: none;
-    text-align: center; }
+/** Smartphones */
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+  /* line 228, sass/main.scss */
+  nav .anchors {
+    display: none;
+  }
 
-  .about-me-thumbnail {
-    margin-left: 0; }
-
-  .project .desc {
-    margin-left: 0;
-    display: inline-block; }
-  .project .title {
-    float: center;
-    display: block;
-    margin: 0 auto;
-    text-align: center; }
-  .project .preview {
-    float: none;
-    text-align: center; }
-
-  .project:not(:first-child) {
-    padding-top: 20px; }
-
-  .date, .title {
-    display: block;
-    float: none; }
-
-  .list-no-style {
-    padding: 0; }
-
+  /* line 232, sass/main.scss */
   .main-section {
     border-left: none;
-    border-right: none; }
-    .main-section .content {
-      padding: 1em; }
+    border-right: none;
+  }
+  /* line 236, sass/main.scss */
+  .main-section .content {
+    padding: 1.25em;
+  }
 
-  nav .anchors {
-    display: none; } }
+  /* line 241, sass/main.scss */
+  .project {
+    padding: 0.5em;
+  }
+  /* line 244, sass/main.scss */
+  .project .desc {
+    margin-left: 0;
+    display: inline-block;
+  }
+  /* line 249, sass/main.scss */
+  .project .thumbnail {
+    width: 250px;
+    height: 150px;
+  }
+  /* line 254, sass/main.scss */
+  .project .preview, .project .date, .project .title {
+    float: none;
+    display: block;
+    text-align: center;
+  }
 
-/*# sourceMappingURL=main.css.map */
+  /* line 261, sass/main.scss */
+  .project:not(:first-child) {
+    padding-top: 20px;
+  }
+
+  /* line 267, sass/main.scss */
+  #about .preview {
+    display: block;
+    float: none;
+    text-align: center;
+  }
+  /* line 272, sass/main.scss */
+  #about .about-me-thumbnail {
+    margin-left: 0;
+    float: none;
+  }
+
+  /* line 279, sass/main.scss */
+  .resume-item .title:not(:first-child) {
+    padding-top: 20px;
+  }
+  /* line 283, sass/main.scss */
+  .resume-item .date, .resume-item .title {
+    float: none;
+    display: block;
+  }
+
+  /* line 289, sass/main.scss */
+  .list-no-style {
+    padding: 0;
+  }
+}
+/** iPads */
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) {
+  /* line 299, sass/main.scss */
+  #container {
+    width: 95%;
+  }
+
+  /* line 304, sass/main.scss */
+  .project .date {
+    display: block;
+    float: none;
+  }
+}

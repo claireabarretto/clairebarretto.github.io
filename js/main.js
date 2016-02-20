@@ -1,7 +1,7 @@
-var words = [
+/*var words = [
 	{text: "HTML5", weight: 7},
 	{text: "CSS3", weight: 6},
-	{text: "SASS", weight: 3},
+	{text: "SASS", weight: 5},
 	{text: "Bootstrap", weight: 7},
 	{text: "JavaScript", weight: 8},
 	{text: "jQuery", weight: 9},
@@ -19,36 +19,31 @@ var words = [
 	{text: "REST", weight: 6},
 	{text: "Google Maps", weight: 5},
 	{text: "d3.js", weight: 6},
-];
+];*/
 
 $(function() {
-	// // Fetch wordcloud file and initialize cloud plugin
-	// $.get("js/wordcloud.txt").then(function(data) {
-	// 	var skills = data.split("\n");
-	// 	var words = skills.map(function(skill, i) {
-	// 		var word = skill.split(",");
-	// 		return {
-	// 			text: word[0], 
-	//			weight: parseInt(word[1])
-	// 		}
-	// 	});
-
-	// 	// Wordcloud initialization
-	// 	$("#wordcloud").jQCloud(words, {
-	// 		autoResize: true,
-	// 		removeOverflowing: false
-	// 	});
-	// });
+	// Fetch wordcloud file and initialize cloud plugin
+	$.get("files/wordcloud.txt").then(function(data) {
+		var skills = data.split("\n");
+		var words = skills.map(function(skill, i) {
+			var word = skill.split(",");
+			return {
+				text: word[0], 
+				weight: parseInt(word[1])
+			}
+		});
+	});
 
 	// Wordcloud initialization
 	$("#wordcloud").jQCloud(words, {	
-		autoResize: true,
-		removeOverflowing: false,
+		autoResize: true
 	});
 });
 
 // Smooth scroll to div
-$(document).on("click", ".anchors a", function() {
+$(document).on("click", ".anchors a", function(evt) {
+	evt.preventDefault();
+
 	var parent = $(this).attr("href");
 	$("html, body").animate({
 		scrollTop: $(parent).offset().top - 60
