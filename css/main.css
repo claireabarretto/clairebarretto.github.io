@@ -1,0 +1,194 @@
+body {
+  font-family: "Lato", "Roboto", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  background-image: url("img/dark-bg.jpg");
+  background-color: #666;
+  color: #666;
+  margin: 0;
+  line-height: 150%; }
+
+header {
+  width: 100%;
+  height: 50px;
+  position: fixed;
+  top: 0;
+  bottom: auto;
+  z-index: 1000;
+  border-bottom: 1px solid #4C4C4C;
+  background-color: #303030; }
+
+a, .link {
+  color: #268770;
+  border-bottom: 1px dotted #268770;
+  text-decoration: none;
+  cursor: pointer; }
+
+nav li {
+  display: inline; }
+nav ul {
+  margin: 0; }
+nav a {
+  color: #ddd;
+  font-size: 14px;
+  letter-spacing: 2px;
+  text-transform: lowercase;
+  margin: 12px 12px 0px 12px;
+  border-bottom: 1px dashed #268770;
+  display: inline-block; }
+nav .anchors {
+  margin-right: 40px; }
+  nav .anchors a:hover {
+    color: #268770; }
+nav .logo .round {
+  color: #268770; }
+nav .logo .icon {
+  color: #fff; }
+nav .header-title {
+  text-transform: uppercase;
+  border: none; }
+
+#container {
+  max-width: 65em;
+  margin: 5em auto;
+  margin-bottom: 3em; }
+
+#wordcloud {
+  width: 100%;
+  height: 250px;
+  opacity: 0.7;
+  margin: 0 auto; }
+
+.main-section {
+  background-color: #EDEDED;
+  background-image: url("img/grey.png");
+  border: 5px solid #262626;
+  box-shadow: 5px 5px 10px #262626;
+  margin-bottom: 1em; }
+  .main-section .section-header {
+    padding: 1em;
+    font-size: 1.25em;
+    text-transform: lowercase;
+    background-color: #268770;
+    color: #ddd; }
+  .main-section .content {
+    padding: 2em; }
+
+.resume-section,
+.project .title {
+  border-bottom: 1px dotted #A3A3A3;
+  padding-bottom: 3px;
+  display: block; }
+
+.job {
+  margin-top: 20px; }
+
+.project {
+  clear: both;
+  overflow: auto;
+  padding: 10px 5px; }
+  .project .preview {
+    float: left; }
+  .project .desc {
+    margin-left: 300px; }
+  .project .thumbnail {
+    width: 275px;
+    height: 200px;
+    border: 3px solid #fff;
+    box-shadow: 0 0 0 2px #666; }
+
+.about-me-thumbnail {
+  width: 175px;
+  height: 175px;
+  margin-left: 20px;
+  border: 3px solid #fff;
+  box-shadow: 0 0 0 2px #666; }
+
+.button {
+  background-color: #666;
+  border: 2px solid #fff;
+  box-shadow: 0 0 0 2px #666;
+  color: #fff;
+  width: 200px;
+  height: 50px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  margin: 5px; }
+  .button a {
+    color: #fff;
+    border: none; }
+
+.map {
+  background-image: url("img/vancouver.png");
+  height: 30em; }
+
+.fa {
+  padding-right: 5px; }
+
+.hide {
+  display: none; }
+
+.center {
+  text-align: center; }
+
+.circle {
+  border-radius: 50%; }
+
+.clearfix {
+  overflow: auto; }
+
+.list-no-style > li {
+  list-style-type: none; }
+
+.inline-list > li {
+  float: left;
+  list-style-position: inside;
+  list-style-type: disc;
+  margin-right: 1em; }
+
+.subtext {
+  font-style: italic; }
+
+.no-style {
+  border: none; }
+
+@media (min-width: 800px) {
+  width: 65em; }
+@media (max-width: 600px) {
+  .preview {
+    float: none;
+    text-align: center; }
+
+  .about-me-thumbnail {
+    margin-left: 0; }
+
+  .project .desc {
+    margin-left: 0;
+    display: inline-block; }
+  .project .title {
+    float: center;
+    display: block;
+    margin: 0 auto;
+    text-align: center; }
+  .project .preview {
+    float: none;
+    text-align: center; }
+
+  .project:not(:first-child) {
+    padding-top: 20px; }
+
+  .date, .title {
+    display: block;
+    float: none; }
+
+  .list-no-style {
+    padding: 0; }
+
+  .main-section {
+    border-left: none;
+    border-right: none; }
+    .main-section .content {
+      padding: 1em; }
+
+  nav .anchors {
+    display: none; } }
+
+/*# sourceMappingURL=main.css.map */
